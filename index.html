@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>No Wake Nation</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0e1a24;
+      color: #ffffff;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(180deg, #0e1a24, #12283a);
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-weight: 400;
+      color: #9fd3ff;
+    }
+    .btn {
+      display: inline-block;
+      margin: 15px 10px;
+      padding: 14px 28px;
+      background: #e63946;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h3 {
+      color: #9fd3ff;
+      margin-bottom: 15px;
+    }
+    .card {
+      background: #162b3d;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #0b1620;
+      color: #7aa7c7;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: #e63946;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
 </head>
+
 <body>
+
+<header>
   <h1>No Wake Nation</h1>
-  <p>No Drama. No Waves. Just Fishing.</p>
+  <h2>No Drama. No Waves. Just Fishing.</h2>
+
+  <a href="#events" class="btn">View Schedule</a>
+  <a href="#contact" class="btn">Contact Us</a>
+</header>
+
+<section>
+  <div class="card">
+    <h3>About No Wake Nation</h3>
+    <p>
+      No Wake Nation is a grassroots bass fishing trail built for anglers who
+      want fair competition, strong payouts, and zero drama. We focus on
+      well-run events, clear rules, and a community-first atmosphere.
+    </p>
+  </div>
+
+  <div class="card" id="events">
+    <h3>Upcoming Events</h3>
+    <p>
+      Full 2025 schedule coming soon.<br>
+      Solo and team formats • Open events • Points race
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Sponsors</h3>
+    <p>
+      Proudly supported by local and regional partners.<br>
+      Sponsor logos will be added here.
+    </p>
+  </div>
+
+  <div class="card" id="contact">
+    <h3>Contact Us</h3>
+
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © No Wake Nation • Bass Fishing Trail
+</footer>
+
 </body>
 </html>
